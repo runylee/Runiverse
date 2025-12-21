@@ -1,0 +1,1964 @@
+.visual {
+    background: #fff;
+    width: 100%;
+    height: auto;
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
+.visual .visual-wrap {
+    width: 100%;
+    height: 100%;
+    /* header 영역 */
+    padding-top: 200px;
+    padding-bottom: 150px;
+    overflow: hidden;
+    position: relative;
+}
+
+.visual .swiper-container {
+    width: 90%;
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+
+.visual .swiper-slide {
+    width: 100%;
+    height: 100%;
+}
+
+.visual .swiper-slide a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.visual .swiper-slide a img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    min-height: 500px;
+    max-height: 635px;
+    object-fit: cover;
+}
+
+.visual .swiper-slide a img:nth-child(2) {
+    display: none;
+}
+
+.visual .swiper-pagination {
+    width: fit-content;
+    height: 30px;
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #0000007a;
+    border-radius: 20px;
+    padding: 0 5px;
+    font-family: "Noto Sans KR", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    color: #b9b6b5;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.visual .fraction-prev,
+.visual .fraction-next {
+    background: transparent;
+    color: #b9b6b5;
+}
+
+.visual .swiper-button-prev.round-shape,
+.visual .swiper-button-next.round-shape {
+    /* 화면 최하단에서 헤더높이 절반 뺀 값 나누기 반 */
+    top: calc((100% + 100px) / 2);
+}
+
+/* 기존 스와이퍼 네비게이션 */
+.visual .swiper-button-prev::after,
+.visual .swiper-button-next::after {
+    display: none;
+}
+
+/* ================================================ */
+
+.c01 {
+    background: #f4f7fa;
+    width: 100%;
+    height: auto;
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
+.c01 .c01-wrap {
+    width: 1440px;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.c01 h3 {
+    font-family: "Noto Sans KR", sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 50px;
+    color: #333;
+    line-height: 1;
+    text-align: center;
+    padding-top: 155px;
+    padding-bottom: 70px;
+}
+
+.c01 .scroll-box {
+    width: 100%;
+    height: auto;
+}
+
+.c01 .swiper-container {
+    width: 100%;
+    height: 100%;
+    padding: 0 0 42px;
+    overflow: hidden;
+    /* 스와이퍼 페이지네이션 */
+    position: relative;
+}
+
+.c01 .swiper-slide {
+    width: 100%;
+    height: 100%;
+}
+
+.c01 .box .image-area {
+    width: 100%;
+    height: auto;
+}
+
+.c01 .box .image-area img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    aspect-ratio: 337 / 253;
+}
+
+.c01 .box .text-area {
+    background: #fff;
+    width: 100%;
+    height: auto;
+}
+
+.c01 .box .text-area .text-wrap {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    padding: 30px 20px;
+}
+
+.c01 .box .text-area .text-wrap .type {
+    font-family: "Noto Sans KR", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1;
+    letter-spacing: 2px;
+    margin-bottom: 14px;
+}
+
+.c01 .box .text-area .text-wrap .title {
+    font-family: "Noto Sans KR", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    color: #333;
+    line-height: 1;
+    word-break: keep-all;
+    margin-bottom: 48px;
+}
+
+.c01 .box .text-area .text-wrap .desc {
+    width: 100%;
+    height: 52px;
+    overflow: hidden;
+    font-family: "Noto Sans KR", sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    color: #666;
+    line-height: 26px;
+    white-space: normal;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    margin-bottom: 24px;
+}
+
+.c01 .box .text-area .text-wrap .cta-area {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.c01 .box .text-area .text-wrap .cta-area .prev {
+    width: 48%;
+    height: auto;
+}
+
+.c01 .box .text-area .text-wrap .cta-area .prev img {
+    display: block;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 143 / 93;
+    margin-bottom: 20px;
+}
+
+.c01 .box .text-area .text-wrap .cta-area .prev a {
+    display: block;
+    width: 100%;
+    height: 50px;
+    transition: 0.5s all ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.c01 .box .text-area .text-wrap .cta-area .prev a span {
+    display: block;
+    width: 100%;
+    height: 50px;
+    font-family: "Noto Sans KR", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    color: #333;
+    line-height: 50px;
+    text-align: center;
+    position: relative;
+    z-index: 3;
+}
+
+.c01 .box .text-area .text-wrap .cta-area .prev a::before {
+    content: '';
+    border: 1px solid #222;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    box-sizing: border-box;
+    z-index: 1;
+}
+
+.c01 .box .text-area .text-wrap .cta-area .prev a::after {
+    content: '';
+    background-color: #0890c0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    box-sizing: border-box;
+    z-index: 2;
+    opacity: 0;
+    transition: top 0.4s ease, opacity 0.4s ease;
+}
+
+.c01 .box .text-area .text-wrap .cta-area .prev a:hover::after {
+    top: 0;
+    opacity:1;
+}
+
+.c01 .box .text-area .text-wrap .cta-area .prev a span:hover {
+    color: #fff;
+}
+
+.c01 .swiper-pagination {
+    width: 100%;
+    height: 12px;
+    position: absolute;
+    bottom:0;
+    left: 0;
+}
+
+.c01 .swiper-pagination-bullet {
+    width: 12px;
+    height: 12px;
+    background: #dbdee1;
+    opacity: 1;
+    position: relative;
+}
+
+.c01 .swiper-pagination-bullet-active {
+    background: var(--maincolor);
+}
+
+
+/* ================================================ */
+
+.c02 {
+    background: #f4f7fa;
+    width: 100%;
+    height: auto;
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
+.c02 .c02-wrap {
+    width: 100%;
+    height: 100%;
+    /* btn01 */
+    position: relative;
+    margin: 0 auto;
+}
+
+.c02 h3 {
+    font-family: "Noto Sans KR", sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 50px;
+    color: #333;
+    line-height: 1;
+    text-align: center;
+    padding-top: 155px;
+}
+
+.c02 .btn01 {
+    position: absolute;
+    top: 174px;
+    right: 160px;
+}
+
+.c02 .btn01 span {
+    display: block;
+    font-family: "Noto Sans KR", sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    color: #666;
+    line-height: 1;
+    position: relative;
+    padding-right: 45px;
+}
+
+.c02 .btn01::after {
+    content: '';
+    display: block;
+    width: 30px;
+    height: 1px;
+    background: #666;
+    position: absolute;
+    top: 50%;
+    right: 0;
+}
+
+.c02 .tab {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.c02 .tab a {
+    display: block;
+    font-family: "Noto Sans KR", sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 22px;
+    color: #888;
+    line-height: 1;
+    text-align: center;
+    padding: 0 30px;
+}
+
+.c02 .tab a:first-child {
+    border-right: 2px solid #ddd;
+}
+
+.c02 .tab-con {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
+
+.c02 .tab-con .con-box {
+    width: 100%;
+    height: auto;
+}
+
+.c02 .tab-con .con-box .swiper-container {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    /* 스와이퍼 네비게이션, 스크롤바 */
+    position: relative;
+    /* 스크롤바 영역 */
+    padding-bottom: 44px;
+}
+
+.c02 .tab-con .con-box .swiper-slide {
+    width: 100%;
+    height: 100%;
+}
+
+.c02 .swiper-slide figure {
+    width: 100%;
+    margin: 0 auto;
+    height: 100%;
+    /* 피그캡션, 오버레이 효과 */
+    position: relative;
+}
+
+.c02 .swiper-slide figure img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    aspect-ratio: 1280 / 720;
+}
+
+/* 슬라이드 오버레이 효과 */
+.c02 .swiper-slide figure::after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top:0;
+    left:0;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 10;
+    opacity: 1;
+    transition: all 0.5s;
+}
+
+.c02 .swiper-slide.swiper-slide-active figure::after {
+    opacity: 0.3;
+}
+
+.c02 .swiper-slide figure img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.c02 .swiper-slide figcaption {
+    position: absolute;
+    top: 18.4%;
+    left: 7.8%;
+    z-index: 20;
+}
+
+.c02 .swiper-slide figcaption .name {
+    font-family: "Noto Sans KR", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    color: #fff;
+    line-height: 1;
+    transform: translateY(100px);
+    opacity: 0;
+    transition: all 1s ease-out 0.5s;
+}
+
+.c02 .swiper-slide.swiper-slide-active figcaption .name {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.c02 .swiper-slide figcaption .desc {
+    font-family: "Noto Sans KR", sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    color: #fff;
+    line-height: 1;
+    margin-top: 40px;
+    margin-bottom: 68px;
+    transform: translateY(100px);
+    opacity: 0;
+    transition: all 1s ease-out 0.6s;
+}
+
+.c02 .swiper-slide.swiper-slide-active figcaption .desc {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.c02 .swiper-slide figcaption .btn02 {
+    display: block;
+    width: 100px;
+    height: 50px;
+    position: relative;
+    overflow: hidden;
+    transform: translateY(100px);
+    opacity: 0;
+    transition: all 1s ease-out 0.7s;
+}
+
+.c02 .swiper-slide.swiper-slide-active figcaption .btn02 {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.c02 .swiper-slide figcaption .btn02 span {
+    display: block;
+    width: 100px;
+    height: 50px;
+    font-family: "Noto Sans KR", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    color: #fff;
+    line-height: 45px;
+    text-align: center;
+    position: relative;
+    z-index: 12;
+}
+
+.c02 .swiper-slide figcaption .btn02::before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    border: 1px solid #fff;
+    box-sizing: border-box;
+    position: absolute;
+    top:0;
+    left:0;
+    z-index: 10;
+}
+
+.c02 .swiper-slide figcaption .btn02::after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    background: #0890c0;
+    box-sizing: border-box;
+    position: absolute;
+    top:100%;
+    left:0;
+    z-index: 11;
+    opacity: 0;
+    transition: all 0.4s ease;
+}
+
+.c02 .swiper-slide figcaption .btn02:hover::after {
+    top:0;
+    opacity: 1;
+}
+
+.c02 .swiper-scrollbar{
+    background: #dbdee1;
+    bottom:0;
+    left:50%;
+    transform: translateX(-50%);
+    display: block !important;
+    opacity: 1 !important;
+}
+
+.c02 .swiper-scrollbar-drag {
+    background: #0890c0;
+}
+
+.c02 .swiper-button-prev.round-shape span,
+.c02 .swiper-button-next.round-shape span {
+    color: #fff;
+}
+
+/* 기존 스와이퍼 네비게이션 */
+.c02 .swiper-button-prev::after,
+.c02 .swiper-button-next::after {
+    display: none;
+}
+
+.c02 .tm-con{
+    display: none;
+}
+
+/* ================================================ */
+
+.c03 {
+    background: #f4f7fa;
+    width: 100%;
+    height: auto;
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
+.c03 .c03-wrap {
+    width: 1440px;
+    height: 100%;
+    margin: 0 auto;
+    padding-bottom: 150px;
+}
+
+.c03 h3 {
+    font-family: "Noto Sans KR", sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 50px;
+    color: #333;
+    line-height: 1;
+    text-align: center;
+    padding-top: 155px;
+    padding-bottom: 70px;
+}
+
+.c03 .boxes {
+    width: 100%;
+    height: auto;
+    max-height: 710px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    gap:3%;
+}
+
+.c03 .left-box {
+    width: 24%;
+    height: auto;
+    position: relative;
+}
+
+.c03 .left-box p {
+    font-family: "Noto Sans KR", sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 26px;
+    color: #333;
+    line-height: 1.5;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+}
+
+.c03 .center-box {
+    width: 49%;
+    height: auto;
+}
+
+.c03 .center-box .swiper-container {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.c03 .center-box .swiper-slide {
+    width: 100%;
+    height: 100%;
+}
+
+.c03 .center-box .swiper-slide a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.c03 .center-box .swiper-slide a img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    aspect-ratio: 1 / 1;
+}
+
+.c03 .right-box {
+    width: 24%;
+    height: auto;
+    position: relative;
+}
+
+.c03 .right-box .swiper-pagination {
+    width: 315px;
+    height: 432px;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    z-index: 50;
+}
+
+.c03 .right-box .swiper-pagination-bullet {
+    display: block;
+    border-bottom: 1px solid #ebebeb;
+    border-radius: 0;
+    background: transparent;
+    width: 100%;
+    height: 144px;
+    margin: 0 !important;
+    opacity: 1;
+    position: relative;
+}
+
+.c03 .right-box .swiper-pagination-bullet::before {
+    display: block;
+    font-family: "Noto Sans KR", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    color: #999;
+    line-height: 1;
+    text-align: left;
+    position: absolute;
+    top: 40px;
+    left: 0;
+}
+
+.c03 .right-box .swiper-pagination-bullet::after {
+    display: block;
+    font-family: "Noto Sans KR", sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    color: #999;
+    line-height: 1;
+    text-align: left;
+    position: absolute;
+    top: 77px;
+    left: 0;
+}
+
+.c03 .swiper-pagination-bullet:nth-child(1)::before {
+    content: '매장오픈소식';
+}
+
+.c03 .swiper-pagination-bullet:nth-child(1)::after {
+    content: '현대백화점 미아점 리뉴얼 OPEN';
+}
+
+.c03 .swiper-pagination-bullet:nth-child(2)::before {
+    content: '매장오픈소식';
+}
+
+.c03 .swiper-pagination-bullet:nth-child(2)::after {
+    content: '롯데백화점 중동점 리뉴얼 OPEN';
+}
+
+.c03 .swiper-pagination-bullet:nth-child(3)::before {
+    content: '매장오픈소식';
+}
+
+.c03 .swiper-pagination-bullet:nth-child(3)::after {
+    content: '에이스스퀘어 군산점 OPEN';
+}
+
+.c03 .swiper-pagination-bullet-active::after,
+.c03 .swiper-pagination-bullet-active::before {
+    color: #0890c0 !important;
+}
+
+.c03 .right-box .swiper-button-next::after{
+    display: none;
+}
+
+.c03 .right-box .swiper-scrollbar {
+    display: none;
+}
+
+/* ================================================ */
+
+.c04 {
+    background: #fff;
+    width: 100%;
+    height: auto;
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
+.c04 .c04-wrap {
+    width: 100%;
+    height: 100%;
+    /* btn01, 스와이퍼 네비게이션 */
+    position: relative;
+    margin: 0 auto;
+}
+
+.c04 h3 {
+    font-family: "Noto Sans KR", sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 50px;
+    color: #333;
+    line-height: 1;
+    text-align: center;
+    padding-top: 155px;
+    padding-bottom: 70px;
+}
+
+.c04 .btn01 {
+    position: absolute;
+    top: 174px;
+    right: 160px;
+}
+
+.c04 .btn01 span {
+    display: block;
+    font-family: "Noto Sans KR", sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    color: #666;
+    line-height: 1;
+    position: relative;
+    padding-right: 45px;
+}
+
+.c04 .btn01::after {
+    content: '';
+    display: block;
+    width: 30px;
+    height: 1px;
+    background: #666;
+    position: absolute;
+    top: 50%;
+    right: 0;
+}
+
+.c04 .boxes {
+    width: 83.33%;
+    height: auto;
+    max-height: 800px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    gap:3%;
+}
+
+.c04 .left-box {
+    width: 26.5%;
+    height: auto;
+    position: relative;
+}
+
+.c04 .left-box .swiper-pagination {
+    width: 100%;
+    height: fit-content;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    z-index: 50;
+}
+
+.c04 .swiper-pagination-bullet {
+    display: block;
+    border-radius: 0;
+    background: transparent;
+    width: 100%;
+    height: 44px;
+    margin: 0 !important;
+    opacity: 1;
+    position: relative;
+}
+
+.c04 .swiper-pagination-bullet::after {
+    display: block;
+    font-family: "Noto Sans KR", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    color: #999;
+    line-height: 1;
+    text-align: left;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.5s all ease;
+}
+
+.c04 .swiper-pagination-bullet:nth-child(1)::after {
+    content: 'HYBRID Z SPRING';
+}
+
+.c04 .swiper-pagination-bullet:nth-child(2)::after {
+    content: '5 FREE SYSTEM';
+}
+
+.c04 .swiper-pagination-bullet:nth-child(3)::after {
+    content: 'NEW MATERIAL';
+}
+
+.c04 .swiper-pagination-bullet:nth-child(4)::after {
+    content: 'ECO & HEALTH';
+}
+
+.c04 .swiper-pagination-bullet-active::after {
+    font-weight: 700;
+    font-size: 22px;
+    color: #0890c0;
+}
+
+.c04 .center-box {
+    width: 44%;
+    height: auto;
+    overflow: hidden;
+}
+
+.c04 .center-box .swiper-container {
+    width: 100%;
+    height: 100%;
+}
+
+.c04 .center-box .swiper-slide {
+    width: 100%;
+    height: 100%;
+}
+
+.c04 .center-box .swiper-slide video {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.c04 .right-box {
+    width: 26.5%;
+    height: auto;
+    overflow: hidden;
+}
+
+.c04 .right-box .swiper-container {
+    width: 100%;
+    height: 100%;
+}
+
+.c04 .right-box .swiper-slide {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.c04 .right-box .swiper-slide .text-area {
+    width: 100%;
+    height: fit-content;
+    position: absolute;
+    top:50%;
+    left: 0;
+    transform: translateY(-50%);
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.c04 .right-box .swiper-slide-active .text-area {
+    opacity: 1;
+}
+
+.c04 .right-box .swiper-slide .text-area .tm-text {
+    display: none;
+}
+
+.c04 .right-box .swiper-slide .text-area .text01 {
+    font-family: "Noto Sans KR", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: clamp(35px, 2.2vw, 40px);
+    color: #333;
+    line-height: 1.5;
+    letter-spacing: -2px;
+    margin-bottom: 30px;
+    opacity: 0;
+    transition: opacity 1s ease 0.5s;
+}
+
+.c04 .right-box .swiper-slide-active .text-area .text01{
+    opacity: 1;
+}
+
+.c04 .right-box .swiper-slide .text-area .text02 {
+    font-family: "Noto Sans KR", sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: clamp(18px, 1.1vw, 20px);
+    color: #666;
+    line-height: 1.5;
+    opacity: 0;
+    transform: translateY(200px);
+    transition: opacity 1s ease 1s, transform 1.5s ease 0.5s;
+}
+
+.c04 .right-box .swiper-slide-active .text-area .text02{
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.c04 .swiper-button-prev.round-shape,
+.c04 .swiper-button-next.round-shape {
+    top: 64%;
+}
+
+/* 기존 스와이퍼 네비게이션 */
+.c04 .swiper-button-prev::after,
+.c04 .swiper-button-next::after {
+    display: none;
+}
+
+/* ================================================ */
+
+.c05 {
+    background: #fff;
+    width: 100%;
+    height: auto;
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
+.c05 .c05-wrap {
+    width: 1440px;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.c05 h3 {
+    font-family: "Noto Sans KR", sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 50px;
+    color: #333;
+    line-height: 1;
+    text-align: center;
+    padding-top: 155px;
+    padding-bottom: 70px;
+}
+
+.c05 .box-wrap {
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 40px;
+}
+
+.c05 .box-wrap a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.c05 .box-wrap a img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    scale: 1;
+    transition: scale 1s ease;
+}
+
+.c05 .box-wrap a img:hover {
+    scale: 1.1;
+}
+
+.c05 .sns-wrap {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    margin-top: 50px;
+}
+
+.c05 .sns-wrap a {
+    display: block;
+}
+
+.c05 .sns-wrap a img {
+    display: block;
+}
+
+/* ================================================ */
+
+.c06 {
+    background: #fff;
+    width: 100%;
+    height: auto;
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
+.c06 .c06-wrap {
+    width: 100%;
+    height: 100%;
+    padding-top: 150px;
+}
+
+.c06 .map {
+    width: 100%;
+    height: 500px;
+    background-image: url(../images/main/c06/store-map.jpg);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: cover;
+        /* box */
+    position: relative;
+}
+
+.c06 .map .text-box {
+    background: #0890c0;
+    width: 340px;
+    height: 340px;
+    position: absolute;
+    bottom:-85px;
+    left: 70%;
+}
+
+.c06 .map .text-box p {
+    font-family: "Noto Sans KR", sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    color: #fff;
+    line-height: 30px;
+    text-align: center;
+    padding-top: 85px;
+}
+
+.c06 .map .text-box .search-box {
+    text-align: center;
+    padding-top: 70px;
+}
+
+.c06 .map .text-box .search-box input {
+    border-bottom: 2px solid #fff;
+    background-color: transparent;
+    background-image: url(../images/main/c06/search-icon-wht.png);
+    background-repeat: no-repeat;
+    background-position: top right;
+    padding-bottom: 12px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.c06 input[type="text"]::placeholder {
+    font-family: "Noto Sans KR", sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    color: #fff;
+    line-height: 1;
+    opacity: 0.5;
+}
+
+/* ================================================ */
+
+.c07 {
+    background: #fff;
+    width: 100%;
+    height: 610px;
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
+.c07 .c07-wrap {
+    width: 100%;
+    height: 100%;
+}
+
+.c07 .box-wrap01 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top:150px;
+}
+
+.c07 .box-wrap01 a {
+    display: block;
+    width: 234px;
+    height: 100px;
+    font-family: "Noto Sans KR", sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    color: #333;
+    line-height: 60px;
+    text-align: center;
+}
+
+.c07 .box-wrap01 a:nth-child(2) {
+    border-left:1px solid #ebebeb;
+    border-right:1px solid #ebebeb;
+}
+
+.c07 .box-wrap01 a span {
+    display: block;
+    width: 100%;
+    height: 45px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+}
+
+.c07 .box-wrap01 a:nth-child(1) span {
+    background-image: url(../images/main/c07/con01.png);
+}
+
+.c07 .box-wrap01 a:nth-child(2) span {
+    background-image: url(../images/main/c07/con02.png);
+}
+
+.c07 .box-wrap01 a:nth-child(3) span {
+    background-image: url(../images/main/c07/con03.png);
+}
+
+.c07 .box-wrap02 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:80px;
+    padding-top:120px;
+}
+
+.c07 .box-wrap02 ul .depart {
+    font-family: "Noto Sans KR", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    color: #333;
+    line-height: 1;
+}
+
+.c07 .box-wrap02 ul .tell {
+    font-family: "Noto Sans KR", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    color: #333;
+    line-height: 1;
+    margin-top:30px;
+    margin-bottom: 10px;
+}
+
+.c07 .box-wrap02 ul .operate {
+    font-family: "Noto Sans KR", sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    color: #888;
+    line-height: 1;
+}
+
+/* ================================================ */
+
+@media (max-width:1600px) {
+.c01 .c01-wrap {
+    width: 90%;
+}
+
+.c03 .c03-wrap {
+    width: 90%;
+    padding-bottom: 150px;
+}
+
+.c03 .left-box p {
+    font-size: clamp(23px, 1.8vw, 26px);
+    letter-spacing: -2px;
+}
+
+.c03 .right-box .swiper-pagination {
+    width: 245px;
+}
+
+.c03 .right-box .swiper-pagination-bullet::before {
+    font-size: clamp(13px, 1.4vw, 16px);
+}
+
+.c03 .right-box .swiper-pagination-bullet::after {
+    font-size: clamp(17px, 1.11vw, 20px);
+}
+
+.c04 .right-box .swiper-slide .text-area .text01 {
+    font-size: clamp(30px, 2vw, 35px);
+    letter-spacing: -4px;
+}
+
+.c04 .boxes {
+    max-height: 700px;
+}
+
+.c04 .right-box .swiper-slide .text-area .text02 {
+    font-size: clamp(15px, 1.125vw, 18px);
+    letter-spacing: -1px;
+}
+
+.c05 .c05-wrap {
+    width: 90%;
+}
+}
+
+/* ================================================ */
+
+@media (max-width:1200px) {
+.c01 .c01-wrap {
+    width: 90%;
+}
+
+.c01 h3 {
+    font-size: 40px;
+    padding-top: 100px;
+    padding-bottom: 40px;
+}
+
+.c02 .c02-wrap {
+    width: 90%;
+}
+
+.c02 h3 {
+    font-size: 40px;
+    padding-top: 100px;
+}
+
+.c02 .btn01 {
+    display: none;
+}
+
+.c02 .tab {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.c02 .tab a {
+    font-size: 18px;
+}
+
+.c02 .swiper-container {
+    display: none;
+}
+
+.c02 .tm-con {
+    display: block;
+    overflow: hidden;
+}
+
+.c02 .tm-con .image-area {
+    width: 100%;
+    height: auto;
+}
+
+.c02 .tm-con .image-area img {
+    width: 100%;
+    height: 100%;
+}
+
+.c02 .tm-con .text-area .name {
+    font-family: "Noto Sans KR", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    color: #333;
+    line-height: 1;
+    margin: 15px 0 0;
+}
+
+.c02 .tm-con .text-area .desc {
+    font-family: "Noto Sans KR", sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    color: #666;
+    line-height: 1;
+    margin: 15px 0 0;
+}
+
+.c02 .tm-con .text-area .tm-btn01 {
+    display: block;
+    width: 60px;
+    height: auto;
+    margin: 15px 0 0;
+}
+
+.c02 .tm-con .text-area .tm-btn01 img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.c02 .tm-con .scroll-area {
+    width: 100%;
+    height: auto;
+    margin: 50px 0 0;
+}
+
+.c02 .tm-con .scroll-area .boxes {
+    width: 100%;
+    height: auto;
+    display: flex;
+    gap:20px;
+    overflow-x: auto;
+    padding: 0 0 30px;
+}
+
+.c02 .tm-con .scroll-area .boxes::-webkit-scrollbar {
+    height: 4px;
+}
+
+.c02 .tm-con .scroll-area .boxes::-webkit-scrollbar-track {
+    background-color: #dbdee1;
+    border-radius: 4px;
+}
+
+.c02 .tm-con .scroll-area .boxes::-webkit-scrollbar-thumb {
+    background-color: var(--maincolor);
+    border-radius: 4px;
+}
+
+.c02 .tm-con .scroll-area .boxes .box {
+    width: 200px;
+    height: auto;
+    flex-shrink: 0;
+}
+
+.c02 .tm-con .scroll-area .boxes .box a {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 12px;
+}
+
+.c02 .tm-con .scroll-area .boxes .box a img {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.c02 .tm-con .scroll-area .boxes .box a p {
+    font-family: "Noto Sans KR", sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 19px;
+    color: #333;
+    line-height: 1;
+}
+
+.c02 .tm-con .tm-btn02 {
+    display: block;
+    width: 136px;
+    height: 50px;
+    margin: 30px auto 0 auto;
+    position: relative;
+    overflow: hidden;
+}
+
+.c02 .tm-con .tm-btn02 span {
+    display: block;
+    width: 136px;
+    height: 50px;
+    font-family: "Noto Sans KR", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    color: #333;
+    line-height: 50px;
+    text-align: center;
+    position: relative;
+    z-index: 3;
+}
+
+.c02 .tm-con .tm-btn02::before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    border:1px solid #333;
+    box-sizing: border-box;
+    position: absolute;
+    top:0;
+    left:0;
+    z-index: 1;
+}
+
+.c02 .tm-con .tm-btn02::after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    background: #0890c0;
+    box-sizing: border-box;
+    position: absolute;
+    top:100%;
+    left:0;
+    z-index: 2;
+    opacity: 0;
+    transition: all 0.4s ease;
+}
+
+.c02 .tm-con .tm-btn02:hover::after {
+    top:0;
+    opacity: 1;
+}
+
+.c02 .tm-con .tm-btn02 span:hover {
+    color: #fff;
+}
+
+.c02 .swiper-scrollbar{
+    display: none !important;
+}
+
+.c02 .swiper-button-prev.round-shape,
+.c02 .swiper-button-next.round-shape {
+    display: none;
+}
+
+.c03 .c03-wrap {
+    width: 710px;
+    padding-bottom: 100px;
+}
+
+.c03 h3 {
+    font-size: 40px;
+    padding-top: 100px;
+    padding-bottom: 40px;
+}
+
+.c03 .boxes {
+    width: 100%;
+    height: auto;
+    max-height: none;
+    margin: 0 auto;
+    display: block;
+}
+
+.c03 .left-box {
+    display: none;
+}
+
+.c03 .center-box {
+    width: 100%;
+    height: auto;
+}
+
+.c03 .right-box {
+    width: 100%;
+    height: 230px;
+}
+
+.c03 .right-box .swiper-pagination{
+    width: 100%;
+    height: 144px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translateY(0);
+}
+
+.c03 .right-box .swiper-pagination-bullets {
+    position: relative;
+}
+
+.c03 .right-box .swiper-pagination-bullet {
+    display: none;
+    position: absolute;
+    top:0;
+    left:0;
+    border-bottom: none;
+}
+
+.c03 .right-box .swiper-pagination-bullet::before {
+    font-size: 28px;
+    top: 30px;
+}
+
+.c03 .right-box .swiper-pagination-bullet::after {
+    font-size: 34px;
+}
+
+.c03 .right-box .swiper-pagination-bullet-active {
+    display: block;
+}
+
+.c03 .swiper-pagination-bullet-active::after,
+.c03 .swiper-pagination-bullet-active::before {
+    color: #333 !important;
+}
+
+.c03 .right-box .swiper-button-next{
+    position:absolute;
+    top:80%;
+    left:0;
+    width: 100%;
+    background: url(../images/common/tm-swiper-nav-right.png) no-repeat 0 0;
+}
+
+.c03 .right-box .swiper-button-next::after{
+    display: none;
+}
+
+.c03 .right-box .swiper-scrollbar {
+    background: #dbdee1;
+    width: 100%;
+    bottom:0;
+    left:0;
+    display: block !important;
+    opacity: 1 !important;
+}
+
+.c03 .right-box .swiper-scrollbar-drag {
+    background: #0890c0;
+}
+
+.c04 .c04-wrap {
+    width: 710px;
+}
+
+.c04 h3 {
+    font-size: 40px;
+    padding-top: 100px;
+    padding-bottom: 40px;
+}
+
+.c04 .btn01 {
+    display: none;
+}
+
+.c04 .boxes {
+    width: 100%;
+    height: 750px;
+    display: block;
+    position: relative;
+}
+
+.c04 .left-box {
+    width: 100%;
+    height: 18px;
+    position: absolute;
+    bottom:30px;
+    left:0;
+    z-index: 50;
+}
+
+.c04 .left-box .swiper-pagination {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translateY(0);
+}
+
+.c04 .swiper-pagination-bullets {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    gap:15px;
+}
+
+.c04 .swiper-pagination-bullet {
+    border-radius: 50%;
+    background: #fff;
+    width: 18px;
+    height: 18px;
+    opacity: 0.3;
+}
+
+.c04 .swiper-pagination-bullet-active {
+    background: #fff;
+    opacity: 1;
+}
+
+.c04 .swiper-pagination-bullet::after {
+    display: none;
+}
+
+.c04 .center-box {
+    width: 100%;
+    height: 100%;
+}
+
+.c04 .center-box .swiper-slide {
+    position: relative;
+}
+
+.c04 .center-box .swiper-slide::after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    background: url(../images/main/c04/tm-slide-shadow.png) no-repeat center bottom;
+    position: absolute;
+    bottom:0;
+    left:0;
+}
+
+.c04 .right-box {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    bottom: 0;
+    left:0;
+}
+
+.c04 .right-box .swiper-slide .text-area {
+    top: 250px;
+    left: 30px;
+    transform: translateY(0);
+    transition: opacity 1s ease;
+}
+
+.c04 .right-box .swiper-slide .text-area .tm-text {
+    display: block;
+    font-family: "Noto Sans KR", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    color: #fff;
+    opacity: 0.8;
+    line-height: 1.5;
+    margin-bottom: 30px;
+}
+
+.c04 .right-box .swiper-slide .text-area .text01 {
+    color: #fff;
+    opacity: 1;
+    transition: none;
+}
+
+.c04 .right-box .swiper-slide .text-area .text02 {
+    color: #fff;
+    opacity: 1;
+    transform: translateY(0);
+    transition: none;
+}
+
+.c04 .swiper-button-prev.round-shape,
+.c04 .swiper-button-next.round-shape {
+    display: none;
+}
+
+.c05 .c05-wrap {
+    width: 710px;
+}
+
+.c05 h3 {
+    font-size: 40px;
+    padding-top: 100px;
+    padding-bottom: 40px;
+}
+
+.c05 .box-wrap {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.c06 .c06-wrap {
+    padding-top: 100px;
+}
+
+.c06 .map {
+    width: 100%;
+    height: 340px;
+    background: none;
+}
+
+.c06 .map .text-box {
+    width: 100%;
+    height: 100%;
+    top:0;
+    left:0;
+}
+
+.c06 .map .text-box br{
+    display: none;
+}
+
+.c06 .map .text-box p {
+    width: 80%;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.c06 .map .text-box .search-box {
+    text-align: center;
+}
+
+.c06 .map .text-box .search-box input {
+    width: 80%;
+}
+
+.c07 {
+    height: auto;
+}
+
+.c07 .box-wrap01 {
+    padding-top:50px;
+    padding-bottom: 50px;
+}
+
+.c07 .box-wrap02 {
+    height: 262px;
+    background: #b8ada5;
+    justify-content: left;
+    padding: 50px 0 50px 5%;
+}
+
+.c07 .box-wrap02 ul .depart {
+    font-size: 14px;
+    color: #fff;
+}
+
+.c07 .box-wrap02 ul .tell {
+    font-size: 30px;
+    color: #fff;
+}
+
+.c07 .box-wrap02 ul .operate {
+    font-size: 14px;
+    color: #fff;
+}
+}
+
+/* ================================================ */
+
+@media (max-width:768px) {
+.visual .visual-wrap {
+    padding-top: 85px;
+}
+
+.visual .swiper-slide a img {
+    max-height:994px;
+}
+
+.visual .swiper-slide a img:nth-child(1) {
+    display: none;
+}
+
+.visual .swiper-slide a img:nth-child(2) {
+    display: block;
+}
+
+.visual .swiper-button-prev.round-shape,
+.visual .swiper-button-next.round-shape {
+    top: calc((100% + 42.5px) / 2);
+}
+
+.c01 h3 {
+    font-size: 25px;
+    padding-top: 100px;
+    padding-bottom: 25px;
+}
+
+.c02 h3 {
+    font-size: 25px;
+    padding-top: 100px;
+}
+
+.c02 .tab {
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+.c02 .tab a {
+    font-size: 16px;
+}
+
+.c02 .tm-con .scroll-area .boxes .box {
+    width: 150px;
+}
+
+.c03 .c03-wrap {
+    width: 90%;
+}
+
+.c03 h3 {
+    font-size: 25px;
+    padding-top: 100px;
+    padding-bottom: 25px;
+}
+
+.c04 .c04-wrap {
+    width: 90%;
+}
+
+.c04 h3 {
+    font-size: 25px;
+    padding-top: 100px;
+    padding-bottom: 25px;
+}
+
+.c05 .c05-wrap {
+    width: 90%;
+}
+
+.c05 h3 {
+    font-size: 25px;
+    padding-top: 100px;
+    padding-bottom: 25px;
+}
+}
+
+/* ================================================ */
+
+@media (max-width:550px) {
+.visual .swiper-button-prev.round-shape {
+    display: none;
+}
+
+.visual .swiper-button-next.round-shape {
+    right: 5%;
+    transform: translate(0, -50%);
+}
+
+.c02 .tm-con .text-area .desc {
+    word-break: keep-all;
+}
+
+.c03 .right-box {
+    height: 200px;
+}
+
+.c03 .right-box .swiper-pagination-bullet::before {
+    font-size: 20px;
+    top: 25px;
+}
+
+.c03 .right-box .swiper-pagination-bullet::after {
+    font-size: 25px;
+    top: 60px;
+    word-break: keep-all;
+}
+
+.c03 .right-box .swiper-button-next{
+    top:85%;
+    width: 60px;
+    background: url(../images/common/tm-swiper-nav-right.png) no-repeat 0 0 / contain;
+}
+
+.c04 .c04-wrap {
+    width: 100%;
+}
+
+.c04 .right-box .swiper-slide .text-area {
+    left: 5%;
+}
+
+.c05 .box-wrap {
+    gap:15px;
+}
+
+.c05 .sns-wrap {
+    gap: 25px;
+    margin-top: 25px;
+}
+
+.c06 .map .text-box p {
+    word-break: keep-all;
+}
+
+.c07 .box-wrap01 {
+    padding-bottom: 0;
+}
+
+.c07 .box-wrap01 a {
+    height: 60px;
+    font-size: 13px;
+    line-height: 35px;
+}
+
+.c07 .box-wrap01 a span {
+    height: 25px;
+}
+
+.c07 .box-wrap02 {
+    display: none;
+}
+}

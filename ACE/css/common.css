@@ -1,0 +1,993 @@
+.noto {
+    font-family: "Noto Sans KR", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+:root {
+    --maincolor: #0890c0;
+}
+
+body {
+    background-color: rgba(8, 144, 192, 0.1);
+}
+
+header {
+    background: #fff;
+    width: 100%;
+    height: 200px;
+    max-width: 1920px;
+    /* nav bg */
+    position: relative;
+    z-index: 100;
+}
+
+/* 스크롤 이벤트 */
+.fixed-header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left:50%;
+    transform: translateX(-50%);
+    transition: transform 0.5s ease;
+}
+
+.fixed-header.hide {
+    transform: translate(-50%, -100%);
+}
+
+/* nav bg */
+header::after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    position: absolute;
+    top:0;
+    left:0;
+    z-index: 2;
+    opacity: 0;
+    transition: all 0.3s ease ;
+}
+
+header.active::after {
+    height: 360px;
+    opacity: 1;
+}
+
+header .header-wrap {
+    width: 90%;
+    height: 100%;
+    margin: 0 auto;
+    /* info */
+    position: relative;
+    z-index: 3;
+}
+
+header .info {
+    width: 100%;
+    height: 75px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    position: absolute;
+    top:0;
+    left: 0;
+}
+
+header .info a {
+    display: block;
+    font-family: "Noto Sans KR", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    color: #666;
+    line-height: 1;
+    margin-left: clamp(20px, 1.56vw, 30px);
+    padding: 10px 0 10px;
+}
+
+header .info a:nth-child(3) {
+    background: url(../images/common/wedding-icon.png) left 15px center no-repeat #E36F96;
+    border-radius: 50px;
+    height: 36px;
+    font-weight: 500;
+    color: #fff;
+    text-align: center;
+    padding: 10px 15px 10px 35px;
+}
+
+header .info a:nth-child(4) {
+    background: #9badb6;
+    border-radius: 50px;
+    height: 36px;
+    font-weight: 500;
+    color: #fff;
+    text-align: center;
+    padding: 10px 15px;
+    margin-left: 5px;
+}
+
+header h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+
+header h1 a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+header h1 a img {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+header nav {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* gnb */
+header nav > ul {
+    height: fit-content;
+    display: flex;
+    margin-top:80px;
+}
+
+header nav > ul:hover {
+    height: 280px;
+}
+
+header nav > ul:hover .low-menu{
+    display: block;
+}
+
+header nav .top-menu {
+    display: block;
+    padding:10px 0 20px;
+}
+
+header nav .top-menu span{
+    display: inline-block;
+    font-family: "Noto Sans KR", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    color: #333;
+    line-height: 1;
+}
+
+header nav .full-menu:hover .top-menu span{
+    color:var(--maincolor);
+}
+
+header nav .low-menu {
+    display: none;
+    position: relative;
+}
+
+header nav .low-menu li {
+    padding-right: clamp(20px, 2.08vw, 40px);
+}
+
+header nav .low-menu li a {
+    display: block;
+    width: fit-content;
+    font-family: "Noto Sans KR", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    color: #666;
+    line-height: 1;
+    padding:10px 0;
+}
+
+header nav .low-menu li a::after {
+    content: '';
+    display: block;
+    width:0%;
+    height: 4px;
+    background: #d6eff8;
+    transition: 0.5s all ease;
+}
+
+header nav .low-menu li a:hover::after {
+    width:100%;
+}
+
+/* gnb1, 2 개별 디자인 */
+header nav .gnb1 .top-menu .eng,
+header nav .gnb2 .top-menu .ko {
+    padding-right: clamp(20px, 2.08vw, 40px);
+}
+
+/* gnb1 비활성화 시 상위메뉴 호버영역 넘치지않게 */
+header nav .gnb1 .full-menu:last-child .top-menu .eng{
+    padding-right: 0;
+}
+
+header nav .gnb1:hover .top-menu .eng,
+header nav .gnb1 .top-menu .ko{
+    display: none;
+}
+
+header nav .gnb1:hover .top-menu .ko{
+    display: block;
+}
+
+/* gnb1 활성화 시 하위메뉴 호버영역 확장 */
+header nav .gnb1 .full-menu:last-child .low-menu {
+    padding-right: 6.25vw;
+}
+
+header nav .gnb2 {
+    /* 아이콘메뉴영역 */
+    margin-right:73px;
+}
+
+header .icons {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: clamp(20px, 1.56vw, 30px);
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+}
+
+header .icons button {
+    display: block;
+    height: 18px;
+    background-color: transparent;
+}
+
+header .icons .tm-left-menu{
+    display: none;
+}
+
+header .icons .search {
+    width: 17px;
+    background: url(../images/common/gnb-search-btn.png) no-repeat center / contain;
+}
+
+header .icons .menu {
+    width: 26px;
+    background: url(../images/common/all-menu-btn.png) no-repeat center / contain;
+}
+
+/* ================================================ */
+
+body.modal-open {
+    overflow: hidden;
+}
+
+header .menu-modal {
+    width: 100vw;
+    height: 100vh;
+    max-width: 1920px;
+    position:fixed;
+    top:0;
+    left:100%;
+    z-index: 1;
+    background-color: #fff;
+    transition: left 0.5s ease;
+}
+
+header .menu-modal.active {
+    left:0;
+}
+
+header .menu-modal .menu-modal-wrap {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+header .menu-modal .close {
+    display: block;
+    width: 18px;
+    height: 18px;
+    position: absolute;
+    top: 100px;
+    right: 100px;
+    z-index: 1;
+    background-color: transparent;
+}
+
+header .menu-modal .close::before {
+    content: '';
+    width: 2px;
+    height: 25px;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+    background-color: #333;
+}
+
+header .menu-modal .close::after {
+    content: '';
+    width: 2px;
+    height: 25px;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%) rotate(-45deg);
+    background-color: #333;
+}
+
+header .menu-modal .left-area {
+    width: 710px;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+header .menu-modal .left-area .image-box {
+    width: 100%;
+    height: 100%;
+}
+
+header .menu-modal .left-area .image-box span {
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top:0;
+    left: 0;
+    pointer-events: none;
+    opacity: 0;
+    scale: 1.05;
+    transition: opacity 1s ease, scale 1s ease;
+}
+
+header .menu-modal .left-area .image-box span.active {
+    opacity: 1;
+    scale: 1;
+}
+
+header .menu-modal .left-area .image-box span:nth-child(1) {
+    background: url(../images/modal/all-menu-visual1.jpg) no-repeat center / cover;
+}
+
+header .menu-modal .left-area .image-box span:nth-child(2) {
+    background: url(../images/modal/all-menu-visual2.jpg) no-repeat center / cover;
+}
+
+header .menu-modal .left-area .image-box span:nth-child(3) {
+    background: url(../images/modal/all-menu-visual3.jpg) no-repeat center / cover;
+}
+
+header .menu-modal .left-area .image-box span:nth-child(4) {
+    background: url(../images/modal/all-menu-visual4.jpg) no-repeat center / cover;
+}
+
+header .menu-modal .left-area .image-box span:nth-child(5) {
+    background: url(../images/modal/all-menu-visual5.jpg) no-repeat center / cover;
+}
+
+header .menu-modal .left-area .text-box {
+    width: 100%;
+    height: 100%;
+    padding: 100px;
+    position: absolute;
+    top:0;
+    left: 0;
+}
+
+header .menu-modal .left-area .text-box .lang {
+    display: flex;
+    margin-left: -20px;
+}
+
+header .menu-modal .left-area .text-box .lang button {
+    display: block;
+    padding: 0 20px;
+    background-color: transparent;
+    font-family: "Noto Sans KR", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    color: #fff;
+    line-height: 1;
+}
+
+header .menu-modal .left-area .text-box .lang button:first-child {
+    border-right: 1px solid #fff;
+}
+
+header .menu-modal .left-area .text-box .lang button.active {
+    font-weight: 900;
+}
+
+header .menu-modal .left-area .text-box .all-menu-wrap {
+    margin-top: 100px;
+}
+
+header .menu-modal .left-area .text-box .all-menu-wrap .menu {
+    display: flex;
+    align-items: flex-start;
+    position: relative;
+}
+
+header .menu-modal .left-area .text-box .all-menu-wrap .one-dep {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 300px;
+    margin-bottom: 30px;
+    font-family: "Noto Sans KR", sans-serif;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 34px;
+    line-height: 1;
+    letter-spacing: -1px;
+    white-space: nowrap;
+    color: rgba(255, 255, 255, 0.5);
+    background-color: transparent;
+}
+
+header .menu-modal .left-area .text-box .all-menu-wrap .one-dep.fixed,
+header .menu-modal .left-area .text-box .all-menu-wrap .one-dep.active {
+    color: rgba(255, 255, 255, 1);
+}
+
+header .menu-modal .left-area .text-box .all-menu-wrap .one-dep span {
+    display: block;
+    width: 0;
+    height: 2px;
+    margin-left: 35px;
+    background-color: #fff;
+    opacity: 0.5;
+    transition: width 0.5s ease, opacity 0.5s ease;
+}
+
+header .menu-modal .left-area .text-box .all-menu-wrap .menu:nth-child(1) .one-dep span.active {
+    width: 205px;
+}
+
+header .menu-modal .left-area .text-box .all-menu-wrap .menu:nth-child(2) .one-dep span.active {
+    width: 75px;
+}
+
+header .menu-modal .left-area .text-box .all-menu-wrap .menu:nth-child(3) .one-dep span.active {
+    width: 65px;
+}
+
+header .menu-modal .left-area .text-box .all-menu-wrap .menu:nth-child(4) .one-dep span.active {
+    width: 70px;
+}
+
+header .menu-modal .left-area .text-box .all-menu-wrap .menu:nth-child(5) .one-dep span.active {
+    width: 120px;
+}
+
+header .menu-modal .left-area .text-box .all-menu-wrap .two-dep {
+    display: none;
+    position: absolute;
+    top:0;
+    left:300px;
+    z-index: 10;
+}
+
+header .menu-modal .left-area .text-box .all-menu-wrap .two-dep li a {
+    display: block;
+    padding-left: 35px;
+    margin-bottom: 10px;
+    font-family: "Noto Sans KR", sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    color: #fff;
+    line-height: 1.5;
+}
+
+header .menu-modal .right-area {
+    width: calc(100% - 710px);
+    height: 100%;
+    padding-top: 200px;
+    padding-left: clamp(50px, 5.208vw, 100px);
+    padding-right: clamp(50px, 5.208vw, 100px);
+    overflow-y: auto;
+}
+
+header .menu-modal .right-area .all-menu-wrap {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+header .menu-modal .right-area .all-menu-wrap .menu {
+    width: calc(100% / 5);
+    min-width: 205px;
+    padding-right: 50px;
+    margin-bottom: 55px;
+}
+
+header .menu-modal .right-area .all-menu-wrap .one-dep {
+    display: block;
+    font-family: "Noto Sans KR", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    color: #333;
+    line-height: 1.5;
+}
+
+header .menu-modal .right-area .all-menu-wrap .two-dep li a {
+    display: block;
+    margin-top: 20px;
+    font-family: "Noto Sans KR", sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 1;
+    color: #666;
+    transition: color 0.3s ease;
+}
+
+header .menu-modal .right-area .all-menu-wrap .two-dep li a:hover {
+    color: var(--maincolor);
+}
+
+header .menu-modal .right-area .link-wrap {
+    width: 100%;
+    height: 130px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px
+}
+
+header .menu-modal .right-area .link-wrap a {
+    width: calc(100% / 3);
+    height: 100%;
+    padding: 0 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+header .menu-modal .right-area .link-wrap a:nth-child(1) {
+    background: url(../images/modal/all-menu-link1.jpg) no-repeat center / cover;
+}
+
+header .menu-modal .right-area .link-wrap a:nth-child(2) {
+    background: url(../images/modal/all-menu-link2.jpg) no-repeat center / cover;
+}
+
+header .menu-modal .right-area .link-wrap a:nth-child(3) {
+    background: url(../images/modal/all-menu-link3.jpg) no-repeat center / cover;
+}
+
+header .menu-modal .right-area .link-wrap a span {
+    display: block;
+    font-family: "Noto Sans KR", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.4;
+    color: #fff;
+    word-break: keep-all;
+}
+
+/* ================================================ */
+
+footer{
+    background:#fff;
+    width: 100%;
+    height:auto;
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
+footer .footer-wrap{
+    width: 90%;
+    height: 100%;
+    margin: 0 auto;
+    padding-top: 60px;
+    display: flex;
+    justify-content: space-between;
+    gap:50px;
+}
+
+footer .footer-nav{
+    display: flex;
+    gap:2.6vw;
+    flex-wrap: wrap;
+}
+
+footer .footer-nav a {
+    display: block;
+    font-family: "Noto Sans KR", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    color: #333;
+    line-height: 1;
+}
+
+footer .copyright{
+    padding:30px 0;
+}
+
+footer .copyright p {
+    font-family: "Noto Sans KR", sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    color: #777;
+    line-height: 2;
+}
+
+footer .tm-br{
+    display: none;
+}
+
+footer .right-area{
+    position: relative;
+}
+
+footer .family-site{
+    width:240px;
+    height: 30px;
+    border-bottom: 2px solid #000000;
+    background-image: url(../images/common/family-site-arrow.png);
+    background-repeat: no-repeat;
+    background-position: top right;
+    font-family: "Noto Sans KR", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    color: #333;
+    line-height: 1;
+    cursor: pointer;
+    margin: 18px 0 0;
+}
+
+footer .family-site-list{
+    display: none;
+    width:240px;
+    height: auto;
+    background:#000;
+    position:absolute;
+    bottom: calc(100% - 48px);
+    right:0;
+}
+
+footer .family-site-list a {
+    display: block;
+    width:100%;
+    height: auto;
+    font-family: "Noto Sans KR", sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    color: #fff;
+    line-height: 1;
+    padding:10px;
+}
+
+footer .family-site-list img {
+    display: block;
+    padding:10px;
+    filter: invert(1);
+    position: absolute;
+    bottom:0;
+    right:0;
+    z-index: 10;
+    cursor: pointer;
+}
+
+/* ================================================ */
+
+@media (max-width:1600px) {
+header .header-wrap {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap:3vw;
+}
+
+header .info {
+    flex: none;
+}
+
+header h1 {
+    position: static;
+    top: 0;
+    left: 0;
+    transform: translate(0, 0);
+    flex: initial;
+}
+
+header nav {
+    justify-content: flex-start;
+}
+
+header nav .gnb1 .top-menu .eng,
+header nav .gnb2 {
+    display: none;
+}
+
+header nav .gnb1 .top-menu .ko {
+    display: block;
+    padding-right: 3vw;
+}
+
+header nav .gnb1 .full-menu:last-child .low-menu {
+    padding-right: 0;
+}
+
+header nav .gnb2 {
+    margin-right:0;
+}
+
+header nav .low-menu li {
+    padding-right: 3vw;
+}
+
+}
+
+/* ================================================ */
+
+@media (max-width:1400px) {
+header .menu-modal .right-area {
+    padding-bottom: 200px;
+}
+
+header .menu-modal .right-area .link-wrap {
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+}
+
+header .menu-modal .right-area .link-wrap a {
+    width: 100%;
+    aspect-ratio: 328 / 130;
+}
+}
+
+/* ================================================ */
+
+@media (max-width:1200px) {
+header .menu-modal .menu-modal-wrap {
+    height: 100vh;
+    overflow-y: auto;
+    flex-direction: column;
+}
+
+header .menu-modal .close {
+    top: 50px;
+    right: 50px;
+}
+
+header .menu-modal .left-area {
+    width: 100%;
+    height: 550px;
+    flex: 0 0 550px;
+}
+
+header .menu-modal .left-area .text-box {
+    padding: 50px;
+}
+
+header .menu-modal .right-area {
+    width: 100%;
+    padding: 50px;
+    overflow-y: visible;
+    flex: 1 1 auto;
+}
+
+header .menu-modal .right-area .all-menu-wrap .menu {
+    width: calc(100% / 3);
+}
+
+header .menu-modal .right-area .link-wrap {
+    height: 130px;
+    flex-direction: row;
+}
+
+header .menu-modal .right-area .link-wrap a {
+    aspect-ratio: unset;
+}
+}
+
+/* ================================================ */
+
+@media (max-width:768px) {
+header {
+    height: 85px;
+}
+
+header .header-wrap {
+    display: flex;
+    align-items: center;
+}
+
+header .info {
+    display: none;
+}
+
+header h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+header h1 a {
+    display: block;
+    width: 91px;
+    height: 24px;
+}
+
+header nav {
+    display: none;
+}
+
+header .icons {
+    width: 100%;
+    justify-content: space-between;
+    gap: 0;
+    position: static;
+    top: 0;
+    right: 0;
+    transform: translateY(0);
+}
+
+header .icons button {
+    height: 20px;
+}
+
+header .icons .tm-left-menu{
+    display: block;
+    width: 23px;
+    background: url(../images/common/tm-left-menu-btn.png) no-repeat center / contain;
+}
+
+header .icons .search {
+    display: none;
+}
+
+header .icons .menu {
+    width: 19px;
+}
+
+header .menu-modal .menu-modal-wrap {
+    overflow-y: hidden;
+}
+
+header .menu-modal .close::before,
+header .menu-modal .close::after {
+    background-color: #fff;
+}
+
+header .menu-modal .left-area {
+    height: 100%;
+    flex: 0 0 100%;
+}
+
+header .menu-modal .left-area .text-box .lang {
+    display: none;
+}
+
+header .menu-modal .left-area .text-box .all-menu-wrap .menu {
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+header .menu-modal .left-area .text-box .all-menu-wrap .one-dep {
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 20px;
+    font-size: 22px;
+    color: rgba(255, 255, 255, 1);
+    opacity: 0.5;
+}
+
+header .menu-modal .left-area .text-box .all-menu-wrap .one-dep.fixed,
+header .menu-modal .left-area .text-box .all-menu-wrap .one-dep.active {
+    opacity: 1;
+}
+
+header .menu-modal .left-area .text-box .all-menu-wrap .one-dep span {
+    display: block;
+    width: 20px;
+    height: 20px;
+    margin-left: 0;
+    background-color: transparent;
+    opacity: 1;
+    position: relative;
+}
+
+header .menu-modal .left-area .text-box .all-menu-wrap .one-dep span::before {
+    content: '';
+    width: 100%;
+    height: 2px;
+    position: absolute;
+    top:50%;
+    left:0;
+    transform: translateY(-50%);
+    background-color: #fff;
+}
+
+header .menu-modal .left-area .text-box .all-menu-wrap .one-dep span::after {
+    content: '';
+    width: 2px;
+    height: 100%;
+    position: absolute;
+    top:0;
+    left:50%;
+    transform: translateX(-50%);
+    background-color: #fff;
+}
+
+header .menu-modal .left-area .text-box .all-menu-wrap .menu:nth-child(1) .one-dep span.active,
+header .menu-modal .left-area .text-box .all-menu-wrap .menu:nth-child(2) .one-dep span.active,
+header .menu-modal .left-area .text-box .all-menu-wrap .menu:nth-child(3) .one-dep span.active,
+header .menu-modal .left-area .text-box .all-menu-wrap .menu:nth-child(4) .one-dep span.active,
+header .menu-modal .left-area .text-box .all-menu-wrap .menu:nth-child(5) .one-dep span.active {
+    width: 20px;
+}
+
+header .menu-modal .left-area .text-box .all-menu-wrap .two-dep {
+    display: none;
+    position: static;
+    margin-bottom: 20px;
+}
+
+header .menu-modal .left-area .text-box .all-menu-wrap .two-dep li a {
+    padding-left: 20px;
+    margin-bottom: 20px;
+    font-weight: 400;
+    line-height: 1;
+}
+
+header .menu-modal .right-area {
+    display: none;
+}
+
+/* ================================================ */
+
+footer .footer-nav a {
+    font-size: 13px;
+}
+
+footer .copyright{
+    padding:20px 0 30px;
+}
+
+footer .copyright p:nth-child(1) {
+    font-size: 13px;
+}
+
+footer .copyright p:nth-child(2) {
+    display: none;
+}
+
+footer .copyright p:nth-child(3) {
+    font-weight: 500;
+    font-size: 11px;
+    line-height: 1.5;
+}
+
+footer .tm-br{
+    display: block;
+}
+
+footer .right-area{
+    display: none;
+}
+}
