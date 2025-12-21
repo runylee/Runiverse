@@ -1,0 +1,635 @@
+.visual {
+  width: 100%;
+  height: auto;
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
+.visual .visual-outer {
+  width: 93.02%;
+  height: 100%;
+  margin: 0 auto;
+}
+
+.visual .visual-aos-box01 {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.visual .swiper-container {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.visual .swiper-slide {
+  width: 100%;
+  height: 100%;
+}
+
+.visual .swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.visual .visual-aos-box02 {
+  width: 100%;
+  height: auto;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+  text-align: center;
+  z-index: 10;
+}
+
+.visual .visual-aos-box02 .text span {
+  display: block;
+  font-family: 'Pretendard', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  color: #fff;
+}
+
+.visual .visual-aos-box02 .text span:first-child {
+  font-size: clamp(44px, 2.82vw, 54px);
+
+}
+
+.visual .visual-aos-box02 .text span:last-child {
+  font-size: clamp(86px, 5.53vw, 106px);
+}
+
+.visual .swiper-button-prev,
+.visual .swiper-button-next {
+  width: 45px;
+  height: auto;
+  border-radius: 50%;
+  font-weight: bold;
+  color: #fff;
+  z-index: 50;
+}
+
+/* ======================== */
+
+.contents {
+  width: 100%;
+  height: auto;
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
+.contents .contents-outer {
+  width: 93.02%;
+  height: 100%;
+  margin: 0 auto;
+}
+
+/* ======================== */
+
+.c01 {
+  width: 100%;
+  height: auto;
+  padding-top: 1%;
+  overflow: hidden;
+}
+
+.c01 .boxes {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    gap: 1%;
+    transform: translateX(100vw);
+    opacity: 0;
+    transition: transform 1s ease-out, opacity 1s ease-out;
+}
+
+.c01 .boxes[data-aos].aos-animate {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+.c01 .boxes .box {
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.c01 .boxes .box a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.c01 .boxes .box a img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    transition: 0.5s ease-in-out;
+}
+
+.c01 .boxes .box a img:hover {
+    scale: 1.1;
+}
+
+/* ============================== */
+
+.c02 {
+  width: 100%;
+  height: auto;
+  display: flex;
+  gap: 1%;
+  padding-top: 1%;
+}
+
+.c02 .tab-btn-box {
+    width: 49.5%;
+    height: auto;
+    aspect-ratio: 1 / 1;
+    position: relative;
+}
+
+.c02 .tab-btn-box .img-area {
+    width: 100%;
+    height: 100%;
+}
+
+.c02 .tab-btn-box .img-area img {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.c02 .tab-btn-box .txt-area {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+}
+
+.c02 .tab-btn-box .txt-area button.active {
+    color: rgba(255, 255, 255, 1);
+}
+
+.c02 .tab-btn-box .txt-area button:hover {
+    color: rgba(255, 255, 255, 1);
+}
+
+.c02 .tab-con-box {
+    width: 49.5%;
+    height: auto;
+}
+
+.c02 .tab-con-box .change-contents {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.c02 .tab-con-box .fixed-area {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top:0;
+    left:0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 2%;
+}
+
+.c02 .tab-con-box .fixed-area .txt-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+}
+
+.c02 .tab-con-box .swiper-container {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.c02 .tab-con-box .swiper-slide {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 2%;
+    opacity: 0;
+}
+
+.c02 .tab-con-box .swiper-slide-active {
+    opacity: 1;
+}
+
+.c02 .tab-con-box .box {
+    width: 100%;
+    height: 100%;
+    aspect-ratio: 1 / 1;
+}
+
+.c02 .tab-con-box .img-box {
+    /* brand-name */
+    position: relative;
+}
+
+.c02 .tab-con-box .img-box a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.c02 .tab-con-box .img-box a img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    scale: 1;
+    transition: scale 0.5s ease-in-out;
+}
+
+.c02 .tab-con-box .img-box a img:hover {
+    scale: 1.1;
+}
+
+/* ============================= */
+
+.c03 {
+  width: 100%;
+  height: auto;
+  display: flex;
+  gap: 1%;
+  padding-top: 1%;
+}
+
+.c03 .tab-btn-box {
+    width: 49.5%;
+    height: auto;
+    aspect-ratio: 1 / 1;
+    position: relative;
+}
+
+.c03 .tab-btn-box .img-area {
+    width: 100%;
+    height: 100%;
+}
+
+.c03 .tab-btn-box .img-area img {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.c03 .tab-btn-box .txt-area {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+}
+
+.c03 .tab-btn-box .txt-area button.active {
+    color: rgba(255, 255, 255, 1);
+}
+
+.c03 .tab-btn-box .txt-area button:hover {
+    color: rgba(255, 255, 255, 1);
+}
+
+.c03 .tab-con-box {
+    width: 49.5%;
+    height: auto;
+}
+
+.c03 .tab-con-box .change-contents {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.c03 .tab-con-box .fixed-area {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top:0;
+    left:0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 2%;
+}
+
+.c03 .tab-con-box .fixed-area .txt-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+}
+
+.c03 .tab-con-box .swiper-container {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.c03 .tab-con-box .swiper-slide {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 2%;
+    opacity: 0;
+}
+
+.c03 .tab-con-box .swiper-slide-active {
+    opacity: 1;
+}
+
+.c03 .tab-con-box .box {
+    width: 100%;
+    height: 100%;
+    aspect-ratio: 1 / 1;
+}
+
+.c03 .tab-con-box .img-box {
+    /* brand-name */
+    position: relative;
+}
+
+.c03 .tab-con-box .img-box a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.c03 .tab-con-box .img-box a img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    scale: 1;
+    transition: scale 0.5s ease-in-out;
+}
+
+.c03 .tab-con-box .img-box a img:hover {
+    scale: 1.1;
+}
+
+/* ============================= */
+
+.c04 {
+  width: 100%;
+  height: auto;
+  padding-top: 1%;
+  padding-bottom: 3%;
+  overflow: hidden;
+}
+
+.c04 .boxes {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    gap: 1%;
+    transform: translateX(100vw);
+    opacity: 0;
+    transition: transform 1s ease-out, opacity 1s ease-out;
+}
+
+.c04 .boxes[data-aos].aos-animate {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+.c04 .boxes .box {
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.c04 .boxes .box a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.c04 .boxes .box a img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    transition: 0.5s ease-in-out;
+}
+
+.c04 .boxes .box a img:hover {
+    scale: 1.1;
+}
+
+/* ============반응형 시작============ */
+
+@media (max-width:1500px) {
+.visual .visual-aos-box02 .text span:first-child {
+  font-size: clamp(34px, 2.94vw, 44px);
+}
+
+.visual .visual-aos-box02 .text span:last-child {
+  font-size: clamp(66px, 5.74vw, 86px);
+}
+}
+
+@media (max-width:1024px) {
+.visual {
+  display: none;
+}
+
+.contents {
+  padding-top : 80px;
+}
+
+.contents .contents-outer {
+  width: 97.07%;
+}
+
+.c01 .boxes {
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 0;
+}
+
+.c01 .boxes .box:nth-child(1),
+.c01 .boxes .box:nth-child(3) {
+  width: 49.25%;
+  order: 0;
+}
+
+.c01 .boxes .box:nth-child(2) {
+  display: block;
+  width: 100%;
+  order: 1;
+  margin-top: 1.5%;
+}
+
+.c02 {
+  flex-direction: column;
+  gap: 0;
+  padding-top: 0;
+  margin-top: 1.5%;
+}
+
+.c02 .tab-btn-box {
+  width: 100%;
+}
+
+.c02 .tab-con-box {
+  width: 100%;
+  margin-top: 1.5%;
+}
+
+.c02 .tab-con-box .swiper-slide {
+  gap: 1.5%;
+  padding-bottom:1.5%;
+}
+
+.c03 {
+  flex-direction: column;
+  gap: 0;
+  padding-top: 0;
+  margin-top: 1.5%;
+}
+
+.c03 .tab-btn-box {
+  width: 100%;
+  order: 1;
+}
+
+.c03 .tab-con-box {
+  width: 100%;
+  order: 2;
+  margin-top: 1.5%;
+}
+
+.c03 .tab-con-box .swiper-slide {
+  gap: 1.5%;
+  padding-bottom:1.5%;
+}
+
+.c04 {
+  padding-top: 0;
+  margin-top: 1.5%;
+}
+
+.c04 .boxes {
+  flex-direction: column;
+  gap: 0;
+}
+
+.c04 .boxes .box:nth-child(2) {
+  margin-top: 1.5%;
+}
+}
+
+@media (max-width:768px) {
+.c02 .tab-btn-box .img-area {
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.c03 .tab-btn-box .img-area {
+  border-radius: 20px;
+  overflow: hidden;
+}
+}
+
+@media (max-width:500px) {
+.contents {
+  padding-top : 50px;
+}
+
+.contents .contents-outer {
+  width: 92.19%;
+}
+
+.c01 .boxes .box {
+  border-radius: 15px;
+}
+
+.c01 .boxes .box:nth-child(1),
+.c01 .boxes .box:nth-child(3) {
+  width: 48.5%;
+}
+
+.c01 .boxes .box:nth-child(2) {
+  margin-top: 3%;
+}
+
+.c02 {
+  margin-top: 3%;
+}
+
+.c02 .tab-btn-box .img-area {
+    border-radius: 15px;
+}
+
+.c02 .tab-con-box {
+  margin-top: 3%;
+}
+
+.c02 .tab-con-box .swiper-slide {
+  gap: 3%;
+  padding-bottom:3%;
+}
+
+.c02 .tab-con-box .img-box a {
+  border-radius: 15px;
+}
+
+.c03 {
+  margin-top: 3%;
+}
+
+.c03 .tab-btn-box .img-area {
+  border-radius: 15px;
+}
+
+.c03 .tab-con-box {
+  margin-top: 3%;
+}
+
+.c03 .tab-con-box .swiper-slide {
+  gap: 3%;
+  padding-bottom:3%;
+}
+
+.c03 .tab-con-box .img-box a {
+  border-radius: 15px;
+}
+
+.c04 {
+  margin-top: 3%;
+  padding-bottom: 9%;
+}
+
+.c04 .boxes .box {
+  border-radius: 15px;
+}
+
+.c04 .boxes .box:nth-child(2) {
+  margin-top: 3%;
+}
+}
