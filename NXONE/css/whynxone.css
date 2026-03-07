@@ -1,0 +1,168 @@
+.challenges {
+    width: 100%;
+    height: auto;
+    background-color: var(--color-gray-100);
+}
+.challenges__inner {
+    max-width: var(--content-max-width-pc);
+    padding-inline: var(--padding-inline-common);
+    margin: 0 auto;
+    padding-block: 120px;
+}
+.challenges__heading {
+    font-family: var(--ff-korean);
+    font-weight: var(--fw-bold);
+    font-size: var(--fs-heading-fluid);
+    line-height: var(--lh-sm);
+    color: var(--color-black-primary);
+    text-align: center;
+}
+.challenges__heading br {
+    display: none;
+}
+.challenges__body {
+    max-width: 896px;
+    margin: 80px auto 0;
+}
+.challenges__grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: clamp(16px, 1.88vw, 36px);
+}
+.challenges__card {
+    width: 100%;
+    height: 136px;
+    padding-inline: clamp(20px, 2.084vw, 40px);
+    border-radius: clamp(16px, 1.7vw, 24px);
+    background-color: var(--color-white-primary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color var(--animate-card);
+}
+.challenges__card:hover {
+    background-color: var(--color-brand-primary);
+}
+.challenges__question {
+    font-family: var(--ff-korean);
+    font-weight: var(--fw-bold);
+    font-size: var(--fs-body-lg-fluid);
+    line-height: var(--lh-sm);
+    color: var(--color-black-primary);
+    text-align: center;
+    word-break: keep-all;
+    transition: color var(--animate-card);
+}
+.challenges__card:hover .challenges__question {
+    color: var(--color-white-primary);
+}
+@media (max-width: 768px) {
+    .challenges__heading br {
+        display: block;
+    }
+    .challenges__grid {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 10px;
+    }
+    .challenges__card {
+        height: 100px;
+    }
+}
+
+/* ============================================================= */
+
+.advantage {
+    width: 100%;
+    height: auto;
+    background-color: var(--color-gray-100);
+}
+.advantage__inner {
+    max-width: var(--content-max-width-pc);
+    padding-inline: var(--padding-inline-common);
+    margin: 0 auto;
+    padding-block: 120px;
+}
+.advantage__heading {
+    font-family: var(--ff-korean);
+    font-weight: var(--fw-bold);
+    font-size: var(--fs-heading-fluid);
+    line-height: var(--lh-sm);
+    color: var(--color-black-primary);
+    text-align: center;
+}
+.advantage__heading br {
+    display: none;
+}
+.advantage__body {
+    margin-top: 80px;
+}
+.advantage__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: clamp(16px, 1.2vw, 20px);
+}
+.advantage__card {
+    aspect-ratio: 1;
+    width: 100%;
+    /* padding: clamp(16px, 2.084vw, 40px); */
+    border-radius: clamp(16px, 2.084vw, 40px);
+    background-color: var(--color-white-primary);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: clamp(16px, 1.2vw, 20px);
+    transition: box-shadow var(--animate-card);
+}
+.advantage__card:hover {
+    box-shadow: 0 2px 20px var(--color-gray-300);
+}
+.advantage__card-icon {
+    display: block;
+    aspect-ratio: 1;
+    width: clamp(50px, 4.17vw, 80px);
+    scale: 0.85;
+    transition: scale var(--animate-card);
+}
+.advantage__card:nth-child(1) .advantage__card-icon {
+    background: url(/images/whynxone/advantage/icon_1.png) no-repeat center center / contain;
+}
+.advantage__card:nth-child(2) .advantage__card-icon {
+    background: url(/images/whynxone/advantage/icon_2.png) no-repeat center center / contain;
+}
+.advantage__card:nth-child(3) .advantage__card-icon {
+    background: url(/images/whynxone/advantage/icon_3.png) no-repeat center center / contain;
+}
+.advantage__card:nth-child(4) .advantage__card-icon {
+    background: url(/images/whynxone/advantage/icon_4.png) no-repeat center center / contain;
+}
+.advantage__card:nth-child(5) .advantage__card-icon {
+    background: url(/images/whynxone/advantage/icon_5.png) no-repeat center center / contain;
+}
+.advantage__card:nth-child(6) .advantage__card-icon {
+    background: url(/images/whynxone/advantage/icon_6.png) no-repeat center center / contain;
+}
+.advantage__card:hover .advantage__card-icon {
+    scale: 1;
+}
+.advantage__card-text {
+    font-family: var(--ff-korean);
+    font-weight: var(--fw-bold);
+    font-size: var(--fs-body-lg-fluid);
+    line-height: var(--lh-sm);
+    color: var(--color-black-primary);
+    text-align: center;
+    word-break: keep-all;
+}
+@media (max-width: 768px) {
+    .advantage__heading br {
+        display: block;
+    }
+    .advantage__grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+    .advantage__card-icon {
+        width: clamp(30px, 7.82vw, 60px);
+    }
+}
