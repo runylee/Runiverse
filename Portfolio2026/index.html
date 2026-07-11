@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>RUNIVERSE</title>
+    <link rel="shortcut icon" href="./images/icons/favicon.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+    <link rel="stylesheet" href="./css/import.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header__inner section__inner">
+            <h1 class="header__logo"><a class="header__logo-link" href="./index.html">RUNIVERSE</a></h1>
+            <p class="header__title">2026 Portfolio</p>
+            <p class="header__author">Lee seryeon</p>
+        </div>
+    </header>
+
+    <nav class="side-nav">
+        <a class="side-nav__link active" href="#hero" data-scroll="hero">Home</a>
+        <a class="side-nav__link" href="#aboutme" data-scroll="aboutme">About me</a>
+        <a class="side-nav__link" href="#project" data-scroll="project">Project</a>
+        <a class="side-nav__link" href="#work" data-scroll="work">Archive</a>
+    </nav>
+
+    <main class="main">
+        <section class="hero">
+            <div class="hero__inner section__inner">
+                <div class="hero__content">
+                    <span class="rotate mobile-only">
+                        <span class="rotate__icon" aria-hidden="true">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <path fill="currentColor" d="
+                                    M170 50
+                                    A120 120 0 1 1 170 290
+                                    A120 120 0 1 1 170 50
+
+                                    M342 50
+                                    A120 120 0 1 1 342 290
+                                    A120 120 0 1 1 342 50
+
+                                    M170 222
+                                    A120 120 0 1 1 170 462
+                                    A120 120 0 1 1 170 222
+
+                                    M342 222
+                                    A120 120 0 1 1 342 462
+                                    A120 120 0 1 1 342 222
+                                "/>
+                            </svg>
+                        </span>
+                    </span>
+                    <h2 class="hero__title">
+                        <span class="hero__text">RUN</span>
+                        <span class="rotate pc-only">
+                            <span class="rotate__icon" aria-hidden="true">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                    <path fill="currentColor" d="
+                                        M170 50
+                                        A120 120 0 1 1 170 290
+                                        A120 120 0 1 1 170 50
+
+                                        M342 50
+                                        A120 120 0 1 1 342 290
+                                        A120 120 0 1 1 342 50
+
+                                        M170 222
+                                        A120 120 0 1 1 170 462
+                                        A120 120 0 1 1 170 222
+
+                                        M342 222
+                                        A120 120 0 1 1 342 462
+                                        A120 120 0 1 1 342 222
+                                    "/>
+                                </svg>
+                            </span>
+                            <span class="rotate__text hero__char">I</span>
+                        </span>
+                        <span class="hero__text">VERSE</span>
+                    </h2>
+                    <p class="hero__description">2026 웹퍼블리셔 이세련의 포트폴리오입니다.</p>
+                </div>
+            </div>
+
+            <!-- gsap start -->
+            <div class="hero__cursor"></div>
+            <div class="hero__stars"></div>
+            <!-- gsap end -->
+        </section>
+
+        <section class="aboutme">
+            <div class="aboutme__inner section__inner">
+                <div class="aboutme__header">
+                    <h2 class="section-header__title">ABOUT ME</h2>
+                    <p class="section-header__description">안녕하세요! 웹 퍼블리셔 <span class="mark">이세련</span>입니다.<br>컴포넌트 중심 설계와 고도화에 관심이 많은 퍼블리셔 입니다. 코드를 작성할 때 중요하게 생각하는 기준과 개발에 대한 저의 태도를 가볍게 소개합니다.</p>
+                </div>
+                <div class="aboutme__content">
+                    <ul class="aboutme__list">
+                        <li class="aboutme__item" data-aos="fade-up">
+                            <p class="aboutme__question section-content__subtitle">시맨틱 태그, 왜 중요할까?</p>
+                            <h3 class="aboutme__subject section-content__title">HTML</h3>
+                            <p class="aboutme__answer section-content__description">SEO 최적화를 위해 시맨틱 마크업, 메타 태그, 이미지 alt 속성, 반응형 구조를 적용합니다. a 태그와 button 태그를 목적에 맞게 구분하여 사용하며, img 태그와 background-image의 장단점을 이해하고 상황에 맞게 선택합니다. 시맨틱 태그는 웹표준과 접근성의 첫걸음으로, 모든 기기에서 동일한 정보를 제공하는 웹을 만듭니다.</p>
+                        </li>
+                        <li class="aboutme__item" data-aos="fade-up">
+                            <p class="aboutme__question section-content__subtitle">퍼블리셔에게 css란?</p>
+                            <h3 class="aboutme__subject section-content__title">CSS</h3>
+                            <p class="aboutme__answer section-content__description">CSS 변수를 활용한 디자인 시스템과 공통 클래스를 기반으로 컴포넌트 중심의 스타일을 설계합니다. Flex와 Grid를 활용한 반응형 레이아웃을 구현하고, 가상 요소와 keyframes를 활용한 애니메이션을 구현합니다. 재사용성과 유지보수를 고려하며 확장 가능한 CSS를 작성합니다.</p>
+                        </li>
+                        <li class="aboutme__item" data-aos="fade-up">
+                            <p class="aboutme__question section-content__subtitle">자바스크립트, 어디까지 알고있니?</p>
+                            <h3 class="aboutme__subject section-content__title">JavaScript</h3>
+                            <p class="aboutme__answer section-content__description">UI 기능 구현을 위해 JavaScript를 활용하며, 프레임워크 환경에 대한 이해를 넓히기 위해 학습을 이어가고 있습니다. 또한 효과적인 UX를 구현하기 위해 GSAP, three.js 등의 라이브러리 활용을 꾸준히 연습 중입니다.</p>
+                        </li>
+                        <li class="aboutme__item" data-aos="fade-up">
+                            <p class="aboutme__question section-content__subtitle">제이쿼리 마스터했어?</p>
+                            <h3 class="aboutme__subject section-content__title">jQuery</h3>
+                            <p class="aboutme__answer section-content__description">GNB, 아코디언, 탭, 토글, 모달, 스크롤 이벤트 등 다양한 기능을 구현할 수 있으며, 바닐라 JavaScript와의 차이를 이해하고 프로젝트 환경과 유지보수를 고려하여 적절한 방식을 선택합니다.</p>
+                        </li>
+                        <li class="aboutme__item" data-aos="fade-up">
+                            <p class="aboutme__question section-content__subtitle">문제 해결 과정은 배움의 기회입니다.</p>
+                            <h3 class="aboutme__subject section-content__title">Notion</h3>
+                            <p class="aboutme__answer section-content__description">실무에서 마주한 문제와 해결 과정을 기록하며, 다음 프로젝트에 적용할 수 있도록 학습 내용을 꾸준히 정리하고 있습니다.</p>
+                        </li>
+                        <li class="aboutme__item" data-aos="fade-up">
+                            <p class="aboutme__question section-content__subtitle">퍼블리셔에겐 협업이 중요해!</p>
+                            <h3 class="aboutme__subject section-content__title">Figma</h3>
+                            <p class="aboutme__answer section-content__description">디자인 시안과 프로토타입을 이해하고 퍼블리싱에 반영할 수 있으며, Dev Mode를 활용해 레이아웃·컴포넌트를 파악하여 디자이너와 원활하게 협업합니다.</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="keyword">
+            <div class="keyword__inner section__inner" data-aos="zoom-in">
+                <h2 class="keyword__title">THIS IS <br>MY KEYWORD!</h2>
+                <ul class="keyword__list">
+                    <li class="keyword__item">#호기심</li>
+                    <li class="keyword__item">#탐구심</li>
+                    <li class="keyword__item">#학구열</li>
+                    <li class="keyword__item">#분석력</li>
+                    <li class="keyword__item">#꼼꼼함</li>
+                    <li class="keyword__item">#목표지향적</li>
+                    <li class="keyword__item">#성취지향적</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="project">
+            <div class="project__inner">
+                <div class="project__header section__inner">
+                    <p class="section-header__subtitle mark">Commercial Work</p>
+                    <h2 class="section-header__title">PROJECT</h2>
+                </div>
+                <div class="project__content">
+                    <ul class="project__list">
+                        <li class="project__item">
+                            <div class="project__card section__inner" data-aos="fade-up">
+                                <div class="project__media swiper">
+                                    <div class="project__media-wrapper swiper-wrapper">
+                                        <div class="project__media-slide swiper-slide">
+                                            <img class="project__thumbnail" src="./images/project/anua-captured--main.png" alt="ANUA 일본몰 메인페이지 썸네일">
+                                        </div>
+                                        <div class="project__media-slide swiper-slide">
+                                            <img class="project__thumbnail" src="./images/project/anua-captured--plp.png" alt="ANUA 일본몰 컬렉션 썸네일">
+                                        </div>
+                                        <div class="project__media-slide swiper-slide">
+                                            <img class="project__thumbnail" src="./images/project/anua-captured--pdp.png" alt="ANUA 일본몰 제품페이지 썸네일">
+                                        </div>
+                                        <div class="project__media-slide swiper-slide">
+                                            <img class="project__thumbnail" src="./images/project/anua-captured--search-nosearch.png" alt="ANUA 일본몰 검색모달 검색어입력전 썸네일">
+                                        </div>
+                                        <div class="project__media-slide swiper-slide">
+                                            <img class="project__thumbnail" src="./images/project/anua-captured--search-result.png" alt="ANUA 일본몰 검색모달 검색결과 썸네일">
+                                        </div>
+                                        <div class="project__media-slide swiper-slide">
+                                            <img class="project__thumbnail" src="./images/project/anua-captured--cart-empty.png" alt="ANUA 일본몰 빈 장바구니 썸네일">
+                                        </div>
+                                        <div class="project__media-slide swiper-slide">
+                                            <img class="project__thumbnail" src="./images/project/anua-captured--cart-filled.png" alt="ANUA 일본몰 제품 담긴 장바구니 썸네일">
+                                        </div>
+                                        <div class="project__media-slide swiper-slide">
+                                            <img class="project__thumbnail" src="./images/project/anua-captured--popup.png" alt="ANUA 일본몰 비회원 로그인 팝업 썸네일">
+                                        </div>
+                                    </div>
+                                    <div class="swiper-pagination"></div>
+                                </div>
+                                <div class="project__info">
+                                    <h3 class="project__name section-content__title">ANUA JP</h3>
+                                    <div class="project__spec section-content__summary">
+                                        <span>아누아 일본몰</span>
+                                        <span>·</span>
+                                        <span>리뉴얼 신규 구축 프로젝트</span>
+                                        <span>·</span>
+                                        <span>개발 26.04~05(5주)</span>
+                                        <span>·</span>
+                                        <span>QA 26.05~06(3주)</span>
+                                    </div>
+                                    <div class="project__skill section-content__summary">
+                                        <span>Shopify CMS</span>
+                                        <span>/</span>
+                                        <span>Liquid</span>
+                                        <span>/</span>
+                                        <span>HTML</span>
+                                        <span>/</span>
+                                        <span>CSS</span>
+                                        <span>/</span>
+                                        <span>JavaScript</span>
+                                        <span>/</span>
+                                        <span>JSON</span>
+                                        <span>/</span>
+                                        <span>Fetch API</span>
+                                        <span>/</span>
+                                        <span>Splide</span>
+                                    </div>
+                                    <ul class="project__description section-content__description">
+                                        <li>폰트 · 컬러 · 레이아웃 · 간격 등 디자인 시스템 CSS 토큰 설계</li>
+                                        <li>2단계 옵션 선택 후 교집합 조건의 상품을 검색 결과 페이지로 연결하는 필터링 섹션 구현</li>
+                                        <li>PDP 템플릿 : Metafield 기반 제품별 구성 자유도를 높인 유동 구조 설계</li>
+                                        <li>BLOG 템플릿 : Metafield 기반 외부 링크 이동 기능 구현</li>
+                                        <li>Search : 검색어 입력 전 · 후를 분기하여 Fetch API 기반 실시간 검색 미리보기 UI 구현</li>
+                                        <li>Cart : Empty · Filled를 분기하여 UI 구현</li>
+                                        <li>회원 · 비회원을 분기하여 비회원 구매 로그인 팝업 구현</li>
+                                        <li>서드파티 앱 위젯 CSS · JS 커스터마이징</li>
+                                    </ul>
+                                    <a class="cta" href="https://anuashop.jp/" target="_blank">사이트 보러가기</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="project__item">
+                            <div class="project__card section__inner" data-aos="fade-up">
+                                <div class="project__media swiper">
+                                    <div class="project__media-wrapper swiper-wrapper">
+                                        <div class="project__media-slide swiper-slide">
+                                            <img class="project__thumbnail" src="./images/project/vesselgolf-captured--hero.webp" alt="VESSEL GOLF 국내몰 썸네일">
+                                        </div>
+                                        <div class="project__media-slide swiper-slide">
+                                            <img class="project__thumbnail" src="./images/project/vesselgolf-captured--card.webp" alt="VESSEL GOLF 국내몰 썸네일">
+                                        </div>
+                                        <div class="project__media-slide swiper-slide">
+                                            <img class="project__thumbnail" src="./images/project/vesselgolf-captured--list.webp" alt="VESSEL GOLF 국내몰 썸네일">
+                                        </div>
+                                    </div>
+                                    <div class="swiper-pagination"></div>
+                                </div>
+                                <div class="project__info">
+                                    <h3 class="project__name section-content__title">VESSEL GOLF KO</h3>
+                                    <div class="project__spec section-content__summary">
+                                        <span>베슬골프 국내몰 랜딩페이지</span>
+                                        <span>·</span>
+                                        <span>글로벌몰 미러링 프로젝트</span>
+                                        <span>·</span>
+                                        <span>개발 26.03.30~03.31(2일)</span>
+                                    </div>
+                                    <div class="project__skill section-content__summary">
+                                        <span>Shopify CMS</span>
+                                        <span>/</span>
+                                        <span>Liquid</span>
+                                        <span>/</span>
+                                        <span>HTML</span>
+                                        <span>/</span>
+                                        <span>CSS</span>
+                                        <span>/</span>
+                                        <span>JavaScript</span>
+                                        <span>/</span>
+                                        <span>JSON</span>
+                                        <span>/</span>
+                                        <span>AOS</span>
+                                    </div>
+                                    <p class="project__description section-content__description">
+                                        글로벌몰의 랜딩페이지를 구조 분석하여, 디자인 시안 없이 기존 레이아웃과 인터랙션을 동일하게 구현했습니다.
+                                    </p>
+                                    <a class="cta" href="https://vesselgolf.com/pages/prime-2-0-staff-bag" target="_blank">사이트 보러가기</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="project__item">
+                            <div class="project__card section__inner" data-aos="fade-up">
+                                <div class="project__media swiper">
+                                    <div class="project__media-wrapper swiper-wrapper">
+                                        <div class="project__media-slide swiper-slide">
+                                            <img class="project__thumbnail" src="./images/project/nxone-captured--hero.png" alt="NXONE 국내몰 썸네일">
+                                        </div>
+                                    </div>
+                                    <div class="swiper-pagination"></div>
+                                </div>
+                                <div class="project__info">
+                                    <h3 class="project__name section-content__title">NXONE KO</h3>
+                                    <div class="project__spec section-content__summary">
+                                        <span>NXONE 국내 브랜드 사이트 서브페이지</span>
+                                        <span>·</span>
+                                        <span>신규 구축 프로젝트</span>
+                                        <span>·</span>
+                                        <span>개발 26.02(1주)</span>
+                                    </div>
+                                    <div class="project__skill section-content__summary">
+                                        <span>Shopify CMS</span>
+                                        <span>/</span>
+                                        <span>Liquid</span>
+                                        <span>/</span>
+                                        <span>HTML</span>
+                                        <span>/</span>
+                                        <span>CSS</span>
+                                        <span>/</span>
+                                        <span>Swiper</span>
+                                    </div>
+                                    <p class="project__description section-content__description">
+                                        Why NXONE 서브페이지를 퍼블리싱했으며, 기존 디자인 시스템과 CSS 변수, 공통 인터랙션 컴포넌트를 활용하여 프로젝트 컨벤션에 맞춰 구현했습니다.
+                                    </p>
+                                    <a class="cta" href="https://nxonekorea.com/pages/why-nxone" target="_blank">사이트 보러가기</a>
+                                </div>
+                            </div>
+                            
+                        </li>
+                        <li class="project__item">
+                            <div class="project__card section__inner" data-aos="fade-up">
+                                <div class="project__media swiper">
+                                    <div class="project__media-wrapper swiper-wrapper">
+                                        <div class="project__media-slide swiper-slide">
+                                            <img class="project__thumbnail" src="./images/project/bridge7-captured--hero.png" alt="브릿지세븐 국내몰 썸네일">
+                                        </div>
+                                    </div>
+                                    <div class="swiper-pagination"></div>
+                                </div>
+                                <div class="project__info">
+                                    <h3 class="project__name section-content__title">BRIDGE SEVEN KO</h3>
+                                    <div class="project__spec section-content__summary">
+                                        <span>브릿지세븐 국내 브랜드 사이트</span>
+                                        <span>·</span>
+                                        <span>유지보수</span>
+                                        <span>·</span>
+                                        <span>26.01~</span>
+                                    </div>
+                                    <div class="project__skill section-content__summary">
+                                        <span>Shopify CMS</span>
+                                        <span>/</span>
+                                        <span>Liquid</span>
+                                        <span>/</span>
+                                        <span>HTML</span>
+                                        <span>/</span>
+                                        <span>CSS</span>
+                                        <span>/</span>
+                                        <span>JavaScript</span>
+                                        <span>/</span>
+                                        <span>JSON</span>
+                                        <span>/</span>
+                                        <span>Swiper</span>
+                                    </div>
+                                    <ul class="project__description section-content__description">
+                                        <li>메인페이지 히어로 섹션 개발</li>
+                                        <li>전 페이지 고해상도 대응</li>
+                                        <li>컨테이너 레이아웃 일관성 개선</li>
+                                    </ul>
+                                    <a class="cta" href="https://bridge7.co.kr/" target="_blank">사이트 보러가기</a>
+                                </div>
+                            </div>
+                            
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="work">
+            <div class="work__inner section__inner">
+                <div class="work__header">
+                    <p class="section-header__subtitle mark">Personal Work</p>
+                    <h2 class="section-header__title">ARCHIVE</h2>
+                    <p class="section-header__description">실무에 필요한 퍼블리싱 역량을 기르기 위해 진행한 개인 프로젝트입니다. 디자인 의도를 명확히 이해하고 기존 사이트의 UI와 인터랙션을 충실히 구현하며 반응형 대응과 다양한 라이브러리 활용을 연습했습니다.</p>
+                </div>
+                <div class="work__content">
+                    <ul class="work__list">
+                        <li class="work__item" data-aos="fade-up">
+                            <img class="work__thumbnail" src="./images/work/spc-demo.png" alt="SPC 메인페이지 프로젝트 썸네일">
+                            <div class="work__info">
+                                <h3 class="work__name section-content__title">SPC</h3>
+                                <div class="work__spec section-content__summary">
+                                    <span>메인페이지</span>
+                                    <span>·</span>
+                                    <span>반응형</span>
+                                    <span>·</span>
+                                    <span>25.09.01~09.07(7일)</span>
+                                </div>
+                                <div class="work__library section-content__summary">
+                                    <span>jQuery</span>
+                                    <span>/</span>
+                                    <span>Swiper</span>
+                                    <span>/</span>
+                                    <span>AOS</span>
+                                </div>
+                                <p class="work__description section-content__description">탭 안의 Swiper pagination 이중구조를 완벽히 재현했습니다. 기존 사이트의 UIUX와 동일하게 구현하되, 모바일 해상도에서 터치 불가한 슬라이드를 개선했습니다. 간결하고 효율적인 구조를 설계하기 위해 여러차례 리팩토링 과정을 거쳤습니다.</p>
+                                <a class="cta" href="https://mbccomputer01.ivyro.net/SPC/" target="_blank">보러가기</a>
+                            </div>
+                        </li>
+                        <li class="work__item" data-aos="fade-up">
+                            <img class="work__thumbnail" src="./images/work/labo-h-demo.png" alt="LABO-H 메인페이지 프로젝트 썸네일">
+                            <div class="work__info">
+                                <h3 class="work__name section-content__title">LABO-H</h3>
+                                <div class="work__spec section-content__summary">
+                                    <span>메인페이지</span>
+                                    <span>·</span>
+                                    <span>반응형</span>
+                                    <span>·</span>
+                                    <span>25.10.26~10.30(5일)</span>
+                                </div>
+                                <div class="work__library section-content__summary">
+                                    <span>jQuery</span>
+                                    <span>/</span>
+                                    <span>Swiper</span>
+                                </div>
+                                <p class="work__description section-content__description">
+                                    무한 롤링 배너, 팝업창 쿠키 설정, DOM 타이밍 이슈 해결을 통해 Swiper progressbar 커스텀 애니메이션을 정확히 구현했습니다.
+                                </p>
+                                <a class="cta" href="https://mbccomputer01.ivyro.net/LABO-H/" target="_blank">보러가기</a>
+                            </div>
+                        </li>
+                        <li class="work__item" data-aos="fade-up">
+                            <img class="work__thumbnail" src="./images/work/ace-demo.png" alt="ACE 메인페이지 프로젝트 썸네일">
+                            <div class="work__info">
+                                <h3 class="work__name section-content__title">ACE</h3>
+                                <div class="work__spec section-content__summary">
+                                    <span>메인페이지</span>
+                                    <span>·</span>
+                                    <span>반응형</span>
+                                    <span>·</span>
+                                    <span>25.10.03~10.09(7일)</span>
+                                </div>
+                                <div class="work__library section-content__summary">
+                                    <span>jQuery</span>
+                                    <span>/</span>
+                                    <span>Swiper</span>
+                                    <span>/</span>
+                                    <span>AOS</span>
+                                </div>
+                                <p class="work__description section-content__description">
+                                    수평·수직 슬라이드를 단일 네비게이션으로 연동했으며, 모든 해상도에서 안정적으로 동작합니다. 복잡한 모달 메뉴의 UX를 그대로 재현했습니다.
+                                </p>
+                                <a class="cta" href="https://mbccomputer01.ivyro.net/ACE/" target="_blank">보러가기</a>
+                            </div>
+                        </li>
+                        <li class="work__item" data-aos="fade-up">
+                            <img class="work__thumbnail" src="./images/work/spao-demo.png" alt="SPAO 메인페이지 프로젝트 썸네일">
+                            <div class="work__info">
+                                <h3 class="work__name section-content__title">SPAO</h3>
+                                <div class="work__spec section-content__summary">
+                                    <span>메인페이지</span>
+                                    <span>·</span>
+                                    <span>반응형</span>
+                                    <span>·</span>
+                                    <span>25.09.15~09.19(5일)</span>
+                                </div>
+                                <div class="work__library section-content__summary">
+                                    <span>jQuery</span>
+                                    <span>/</span>
+                                    <span>Swiper</span>
+                                </div>
+                                <p class="work__description section-content__description">
+                                    섬세한 transition과 dropdown 애니메이션을 완벽히 재현했습니다. 적응형 사이트를 반응형으로 재구성했습니다.
+                                </p>
+                                <a class="cta" href="https://mbccomputer01.ivyro.net/SPAO/" target="_blank">보러가기</a>
+                            </div>
+                        </li>
+                        <li class="work__item" data-aos="fade-up">
+                            <img class="work__thumbnail" src="./images/work/poom-demo.png" alt="POOM 메인페이지 프로젝트 썸네일">
+                            <div class="work__info">
+                                <h3 class="work__name section-content__title">POOM</h3>
+                                <div class="work__spec section-content__summary">
+                                    <span>메인페이지</span>
+                                    <span>·</span>
+                                    <span>반응형</span>
+                                    <span>·</span>
+                                    <span>25.11.10~11.23(14일)</span>
+                                </div>
+                                <div class="work__library section-content__summary">
+                                    <span>jQuery</span>
+                                    <span>/</span>
+                                    <span>Swiper</span>
+                                </div>
+                                <p class="work__description section-content__description">
+                                    다양한 레이아웃과 각종 Swiper 커스텀을 완벽하게 구현했습니다. 적응형 사이트를 반응형으로 재구성했으며, 모바일 Fun &amp; Idea 섹션은 table 구조로 재사용성 높게 구현했습니다.
+                                </p>
+                                <a class="cta" href="https://mbccomputer01.ivyro.net/POOM/poom_index" target="_blank">보러가기</a>
+                            </div>
+                        </li>
+                        <li class="work__item" data-aos="fade-up">
+                            <img class="work__thumbnail" src="./images/work/mega-demo.png" alt="MEGA 메인페이지 프로젝트 썸네일">
+                            <div class="work__info">
+                                <h3 class="work__name section-content__title">MEGA</h3>
+                                <div class="work__spec section-content__summary">
+                                    <span>메인페이지</span>
+                                    <span>·</span>
+                                    <span>반응형</span>
+                                    <span>·</span>
+                                    <span>25.12.05~12.07(3일)</span>
+                                </div>
+                                <div class="work__library section-content__summary">
+                                    <span>jQuery</span>
+                                    <span>/</span>
+                                    <span>fullPage</span>
+                                    <span>/</span>
+                                    <span>AOS</span>
+                                    <span>/</span>
+                                    <span>Swiper</span>
+                                    <span>/</span>
+                                    <span>CountUp</span>
+                                </div>
+                                <p class="work__description section-content__description">
+                                    기존 사이트에 없는 카운트업 효과를 위해 CountUp.js 라이브러리를 이용하여 인터랙티브한 요소를 추가했습니다. 풀페이지 구조에서 AOS, Swiper, CountUp.js 라이브러리를 안정적으로 호환시켰으며 반응형 이슈를 해결했습니다.
+                                </p>
+                                <a class="cta" href="https://mbccomputer01.ivyro.net/MEGA/" target="_blank">보러가기</a>
+                            </div>
+                        </li>
+                        <li class="work__item" data-aos="fade-up" style="display: none;">
+                            <img class="work__thumbnail" src="./images/work/muji-demo.png" alt="MUJI 리뉴얼 프로젝트 썸네일">
+                            <div class="work__info">
+                                <h3 class="work__name section-content__title">MUJI</h3>
+                                <div class="work__spec section-content__summary">
+                                    <span>메인페이지</span>
+                                    <span>·</span>
+                                    <span>서브페이지</span>
+                                    <span>·</span>
+                                    <span>반응형</span>
+                                    <span>·</span>
+                                    <span>25.02~04(3개월)</span>
+                                </div>
+                                <div class="work__library section-content__summary">
+                                    <span>JavaScript</span>
+                                    <span>/</span>
+                                    <span>Swiper</span>
+                                </div>
+                                <p class="work__description section-content__description">
+                                    무인양품 사이트를 직접 기획·디자인·퍼블리싱하여 리뉴얼한 프로젝트입니다. 본 프로젝트를 통해 웹 기획 과정과 디자인 의도를 이해하는 능력을 길렀으며, 퍼블리싱 작업 시 고려해야 할 안목을 기르는 토대가 되었습니다.
+                                </p>
+                                <div class="cta-wrap">
+                                    <a class="cta" href="https://www.figma.com/proto/GOAGTA0CCfapwl8c5O15o2/%EB%AC%B4%EC%9D%B8%EC%96%91%ED%92%88-%EA%B8%B0%ED%9A%8D%EC%84%9C---%EC%9D%B4%EC%84%B8%EB%A0%A8?content-scaling=fixed&kind=proto&node-id=1-2&page-id=0%3A1&scaling=contain&starting-point-node-id=1%3A2" target="_blank">
+                                        기획서 보러가기
+                                    </a>
+                                    <a class="cta" href="https://mbccomputer01.ivyro.net/muji2/index.html" target="_blank">
+                                        사이트 보러가기
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer__inner section__inner">
+            <h2 class="footer__title" data-aos="flip-right">Thank you!</h2>
+            <p class="footer__text">시간 내어 저의 포트폴리오를 봐주셔서 감사합니다.</p>
+            <p class="footer__text">늘 배우는 자세로 성실히 임하겠습니다.</p>
+            <p class="footer__copyright">ⓒ Runiverse's 2026 Portfolio</p>
+        </div>
+        <div class="rolling">
+            <div class="rolling__slide">
+                <div class="rolling__text">RUNIVERSE</div>
+                <div class="rolling__text">RUNIVERSE</div>
+                <div class="rolling__text">RUNIVERSE</div>
+                <div class="rolling__text">RUNIVERSE</div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/gsap.min.js"></script>
+    <script src="./js/common.js"></script>
+    <script src="./js/swiper-custom.js"></script>
+    <script src="./js/gsap-custom.js"></script>
+</body>
+</html>
